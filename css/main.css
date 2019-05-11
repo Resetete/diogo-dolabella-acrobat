@@ -158,7 +158,20 @@ header {
 .menu ul li {
   text-decoration: none;
   list-style: none;
-  padding: 10px;
+  padding: 10px 0;
+  width: 100px;
+}
+
+
+.menu ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 0 10px; /* increase hover color box size of menus items */
+}
+
+.menu ul li a:hover {
+  background-color: #FF6000;
 }
 
 .highlight {
@@ -212,6 +225,7 @@ header {
 .social-media i {
   color: #272725;
   margin: 0 5px;
+  font-size: 1.3em;
 }
 
 .social-media i:hover {
