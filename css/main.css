@@ -7,7 +7,7 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
- 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -97,18 +97,126 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*------------------------*/
+/*------ BASE STYLES -----*/
+/*------------------------*/
+html {
+  background-color: #272725;
+}
+
+header,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: 'open sans', sans-serif;
+  color: white;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+/*------------------------*/
+/*------ Header STYLES -----*/
+/*------------------------*/
+
+header {
+  position: fixed;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 10;
+  /*background-color: rgb(0,0,0,0.6)*/
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  color: white;
+}
+
+.menu ul li {
+  text-decoration: none;
+  list-style: none;
+  padding: 10px;
+}
+
+.highlight {
+  font-weight: bold;
+}
 
 
+.fullscreen-bg { /* fullscreen video background styles */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 90vh;
+  overflow: hidden; /* hide whats flowing over viewport */
+  width: 100%;
+}
 
+.video-overlay {
+  background-color: rgba(255, 96, 0 ,0.5); /* have a color overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+}
 
+.content-wrapper-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  background-color: #E3E3E0;
+}
 
+.content-wrapper-home p {
+  color: #272725;
+}
 
+.logo { /* size on page */
+  width: 30%;
+  margin: 0 30px 0px 30px;
+}
 
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  margin: 0 30px 0px 30px;
+}
 
+.social-media i {
+  color: #272725;
+  margin: 0 5px;
+}
 
-
-
-
+.social-media i:hover {
+  color: #FF6000;
+}
 
 
 
@@ -192,7 +300,7 @@ textarea {
   clear: both;
 }
 
- 
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -210,7 +318,7 @@ textarea {
     /* Style adjustments for high resolution devices */
 }
 
- 
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -286,5 +394,3 @@ textarea {
         page-break-after: avoid;
     }
 }
-
-
