@@ -189,7 +189,7 @@ header {
 }
 
 .video-overlay {
-  background-color: rgba(255, 96, 0 ,0.5); /* have a color overlay */
+  background-color: rgba(255, 96, 0 ,0.1); /* have a color overlay */
   position: absolute;
   top: 0;
   left: 0;
