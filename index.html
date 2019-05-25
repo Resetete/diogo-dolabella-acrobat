@@ -135,17 +135,27 @@
       <div class="testimonial-wrapper">
         <p> <span class="highlight-testim"> " </span> </p>
         <p> <span class="light-font-color"> Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed </span> </p>
-        <p>  <span class="highlight-testim"> " </span> </p>
-        <p>  <span class="highlight-news"> Berliner Zeitung </span>  </p>
+        <p> <span class="highlight-testim"> " </span> </p>
+        <p> <span class="highlight-news"> Berliner Zeitung </span>  </p>
       </div>
     </section>
 
     <section class="contact-section">
       <h1> Contact me </h1>
-      <form>
-        <label for="firstname">first name </label>
-        <input id="firstname" type="text" name="firstname"> </input>
-      </form>
+      <div class="contact-form-wrapper">
+          <form action="action_page.php">
+            <label for="name">name </label>
+            <input id="name" type="text" name="name" placeholder="your name"> </input>
+
+            <label for="email"> email </label>
+            <input id="email" type="text" name="email" placeholder="your email"> </input>
+
+            <label for="subject"> <message </label>
+            <textarea id="subject" name="subject" placeholder="message" style="height:200px"> </textarea>
+            <input type="submit" value="submit">
+
+          </form>
+      </div> <!-- end contact form wrapper -->
     </section>
 
 
