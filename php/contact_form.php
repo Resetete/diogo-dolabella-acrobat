@@ -8,7 +8,7 @@
   $mail_subject = 'Contact form';
   $mail_header = "From: $email":
 
-  mail($recipient, $mail_subject, $form_content, $mail_header) or die("Sorry, something went wrong and your mail could not be send");
+  @mail($recipient, $mail_subject, $form_content, $mail_header) or die("Sorry, something went wrong and your mail could not be send");
 
   echo "Thank you, I have received your email"."<a href='#contact-section'";
 ?>
