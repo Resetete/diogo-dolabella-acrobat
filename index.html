@@ -144,17 +144,17 @@
     <section class="contact-section" id="contact-section">
       <h1> Contact me </h1>
       <div class="contact-form-wrapper">
-          <form action="action_page.php">
+          <form action="php/contact_form.php" method="POST">
               <label for="name"> name </label>
               <input id="name" type="text" name="name" placeholder="your name"> </input>
 
               <label for="email"> email </label>
-              <input id="email" type="text" name="email" placeholder="your email"> </input>
+              <input id="email" type="email" name="email" placeholder="your email" required> </input>
 
-              <label for="subject"> message </label>
-              <textarea id="subject" name="subject" placeholder="Your message" style="height:200px"> </textarea>
+              <label for="message"> message </label>
+              <textarea id="message" name="message" placeholder="Your message" style="height:200px"> </textarea>
 
-              <input type="submit" value="submit">
+              <input type="submit" value="Send">
           </form>
       </div> <!-- end contact form wrapper -->
     </section>

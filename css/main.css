@@ -384,10 +384,12 @@ p {
   align-items: center;
   justify-content: center;
   flex-flow: column;
+  padding-top: 50px; 
+
 }
 
 .videos {
-  padding: 50px 0;
+  padding: 10px 0 50px 0;
 }
 
 .video-menu {
@@ -447,7 +449,7 @@ p {
   width: 60%;
 }
 
-input[type=text], select, textarea {
+input[type=text], input[type=email] , select, textarea {
   width: 100%;
   padding: 10px;
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
