@@ -384,7 +384,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-flow: column;
-  padding-top: 50px; 
+  padding-top: 50px;
 
 }
 
@@ -443,19 +443,21 @@ p {
 
 .contact-form-wrapper {
   border-radius: 5px;
-  background-color: #E3E3E0;
-  padding: 20px;
   margin-top: 10px;
   width: 60%;
 }
 
-input[type=text], input[type=email] , select, textarea {
+input[type=text], input[type=email], select, textarea {
   width: 100%;
   padding: 10px;
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   border: 1px solid #E3E3E0;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #FF6000;
 }
 
 input[type="submit"] {
@@ -471,8 +473,48 @@ input[type="submit"]:hover {
   background-color: #FF8000
 }
 
+/*---------------------------*/
+/*-------- Footer ---------*/
+/*--------------------------*/
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  background-color: #E3E3E0;
+  width: 100%;
+}
 
+footer p {
+  color: #7B7B78;
+  font-size: 0.6em;
+}
+
+.social-media-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  width: 40%;
+  padding-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+}
+
+.footer-container a {
+  width: 2%;
+  padding-left: 2px;
+}
+
+/*.social-media-icon-wrapper a {
+  margin: 10px;
+}*/
 
  /* ==========================================================================
    Helper classes
