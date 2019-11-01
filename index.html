@@ -30,10 +30,10 @@
       <div class="header-wrapper">
           <div class="menu">
             <ul>
-              <li> <a href="#about"> about </a> </li>
-              <li> <a href="#bio"> bio </a> </li>
-              <li> <a href="#gallery"> gallery </a> </li>
-              <li> <a href="#contact"> contact </a> </li>
+              <li> <a href="#about-me-section"> about </a> </li>
+              <li> <a href="#gallery-section"> gallery </a> </li>
+              <li> <a href="#video-section"> videos </a> </li>
+              <li> <a href="#contact-section"> contact </a> </li>
             </ul>
           </div>
       </div>
@@ -67,7 +67,7 @@
         </div> <!-- end content wrapper-->
     </section>
 
-    <section class="gallery-section">
+    <section class="gallery-section" id="gallery-section">
       <div class="content-wrapper-gallery">
         <h2> Photos </h2>
         <div class="gallery">
@@ -102,7 +102,7 @@
       </div> <!-- end content-wrapper-gallery -->
     </section>
 
-    <section class="about-me-section">
+    <section class="about-me-section" id="about-me-section">
       <div class="content-wrapper-about">
         <figure>
           <img src="img/about-me-portrait.jpg" alt="portrait-diogo">
@@ -118,7 +118,8 @@
     </section>
 
     <section>
-      <div class="video-section">
+      <div class="video-section" id="video-section">
+        <h1> Videos </h1>
         <div class="video-menu">
           <span style="font-size: 1em; color: #E3E3E0;">
             <i class="fas fa-arrow-circle-left"></i>
@@ -140,20 +141,20 @@
       </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact-section">
       <h1> Contact me </h1>
       <div class="contact-form-wrapper">
           <form action="action_page.php">
-            <label for="name">name </label>
-            <input id="name" type="text" name="name" placeholder="your name"> </input>
+              <label for="name"> name </label>
+              <input id="name" type="text" name="name" placeholder="your name"> </input>
 
-            <label for="email"> email </label>
-            <input id="email" type="text" name="email" placeholder="your email"> </input>
+              <label for="email"> email </label>
+              <input id="email" type="text" name="email" placeholder="your email"> </input>
 
-            <label for="subject"> <message </label>
-            <textarea id="subject" name="subject" placeholder="message" style="height:200px"> </textarea>
-            <input type="submit" value="submit">
+              <label for="subject"> message </label>
+              <textarea id="subject" name="subject" placeholder="Your message" style="height:200px"> </textarea>
 
+              <input type="submit" value="submit">
           </form>
       </div> <!-- end contact form wrapper -->
     </section>
