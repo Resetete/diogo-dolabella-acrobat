@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+// image gallery
   $(function() {
     $(".img-w").each(function() {
       $(this).wrap("<div class='img-c'></div>")
@@ -27,9 +28,6 @@ $(document).ready(function() {
 
     })
 
-
-
-
   })
 
   $(document).on("click", ".img-c.active", function() {
@@ -40,5 +38,8 @@ $(document).ready(function() {
     }, 500)
   })
 
+// video section
+
+ $()
 
 });
