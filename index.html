@@ -13,12 +13,15 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <!-- stylessheets -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat|Montserrat+Subrayada&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -32,10 +35,10 @@
       <div class="header-wrapper">
           <div class="menu">
             <ul>
-              <li> <a href="#about-me-section"> about </a> </li>
-              <li> <a href="#gallery-section"> gallery </a> </li>
-              <li> <a href="#video-section"> videos </a> </li>
-              <li> <a href="#contact-section"> contact </a> </li>
+              <li> <a href="#about-me-section"> About </a> </li>
+              <li> <a href="#gallery-section"> Gallery </a> </li>
+              <li> <a href="#video-section"> Videos </a> </li>
+              <li> <a href="#contact-section"> Contact </a> </li>
             </ul>
           </div>
       </div>
@@ -59,19 +62,26 @@
               <img src="img/logo-diogo.png" alt="logo-diogo-dolabella">
             </figure>
           </div>
-          <p id="dark-font">INTRO - WHAT TO OFFER - Is an artistic acrobat offering ….. I am available for booking!</p>
+          <p id="dark-font">Diogo is an <span class="highlight-testim">outstanding acrobat</span> and artist originally from Brazil. He is seen worldwide on festivals with his <span class="highlight-testim">impressive</span> show. He currently lives and works in Berlin. </p>
           <div class="social-media">
-            <i class="fab fa-facebook-square"></i>
+            <a href="https://www.youtube.com/channel/UCH-MPGz7gOLgkgIhDeIGIKw" target="_blank">
+              <i class="fab fa-facebook-square"></i>
+            </a>
             <i class="fab fa-instagram"></i>
-            <i class="fab fa-youtube-square"></i>
+            <a href="https://www.youtube.com/channel/UCH-MPGz7gOLgkgIhDeIGIKw" target="_blank">
+              <i class="fab fa-youtube-square"></i>
+            </a>
             <i class="fas fa-envelope-square"></i>
+            <a href="https://vimeo.com/user56758588" target="_blank">
+              <i class="fab fa-vimeo"></i>
+            </a>
           </div>
         </div> <!-- end content wrapper-->
     </section>
 
     <section class="gallery-section" id="gallery-section">
       <div class="content-wrapper-gallery">
-        <h2> Photos </h2>
+        <h1> Photos </h1>
         <div class="gallery">
           <div class="img-w">
             <img src="img/gallery-img-1.jpg" alt="">
@@ -111,9 +121,9 @@
         </figure>
         <div class="about-content">
           <h1> About me </h1>
-          <p> nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euism </p>
+          <p> Diogo comes from Brazil and completed his art education at circus schools in Brazil and Belgium. He worked among others for greats like "Franco Dragone" and was seen at many festivals around the world with his impressive show. Diogo currently lives in Berlin through regular appearances and arrangements in German circus shows. </p>
           <div class="contact-me-btn">
-            <button type="button"> contact </button>
+            <button type="button"> Contact </button>
           </div>
         </div>
       </div> <!-- end content-wrapper-about -->
@@ -137,9 +147,10 @@
     <section class="testimonial-section">
       <div class="testimonial-wrapper">
         <p> <span class="highlight-testim"> " </span> </p>
-        <p> <span class="light-font-color"> Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed </span> </p>
+        <p> <span class="light-font-color"> Seine Weltklasse-Akrobaten müssen eben auch die Lücken zwischen ihren Auftritten füllen. [...] Mikael Bres und Diogo Dolabella aus Belgien überlisten die Schwerkraft an zwei senkrechten Masten.</span> </p>
         <p> <span class="highlight-testim"> " </span> </p>
-        <p> <span class="highlight-news"> Berliner Zeitung </span>  </p>
+        <p> <span class="highlight-news"> Der Tagesspiegel </span>  </p>
+        <p hidden="true"> Source: https://www.tagesspiegel.de/berlin/akrobat-imamuesiergeschaeft/7174370.html </p>
       </div>
     </section>
 
@@ -147,15 +158,18 @@
       <h1> Contact me </h1>
       <div class="contact-form-wrapper">
           <form name='input' action="https://formspree.io/xzbzlroz" method="POST">
-              <label for="name"> name </label>
+            <div class="form-group">
+              <label for="name" hidden="true"> name </label>
               <input id="name" type="text" name="name" placeholder="Your name"> </input>
-
-              <label for="_replyto"> </label>
+            </div>
+            <div class="form-group">
+              <label for="_replyto" hidden="true"> </label>
               <input id="email" type="email" name="_replyto" placeholder="Your email" required> </input>
-
-              <label for="message"> message </label>
+            </div>
+            <div class="form-group">
+              <label for="message" hidden="true"> message </label>
               <textarea id="message" name="message" placeholder="Your message" style="height:200px"> </textarea>
-
+            </div>
               <input type="hidden" name="_subject" value="Message from Diogos Acrobat page">
               <input type="hidden" name="_next" value="https://resetete.github.io/diogo-dolabella-acrobat/index.html">
 

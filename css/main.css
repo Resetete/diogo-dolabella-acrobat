@@ -102,6 +102,7 @@ textarea {
 /*------------------------*/
 html {
   background-color: #272725;
+  font-family: 'Open sans', sans-serif;
 }
 
 
@@ -115,9 +116,13 @@ footer {
 
 h1,
 h2,
-h3,
+h3 {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  color: white;
+}
+
 p {
-  font-family: 'open sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: white;
   margin: 0px;
 }
@@ -183,6 +188,7 @@ header {
 
 .menu ul li a:hover {
   background-color: #FF6000;
+  padding: 5px;
 }
 
 .highlight {
@@ -366,7 +372,7 @@ p {
   background-color: #FF6000;
   border: none;
   border-radius: 2px;
-  padding: 5px 10px;
+  padding: 10px 20px;
   color: #E3E3E0;
   margin: 20px;
 }
@@ -420,6 +426,12 @@ p {
   color: #FF6000;
 }
 
+.highlight-testim:hover {
+  background-color: #FF6000;
+  color: #fff;
+  cursor: none;
+}
+
 .light-font-color {
   color: #F9F9F6;
 }
@@ -438,22 +450,27 @@ p {
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    padding: 50px;
+    padding: 100px;
 }
 
 .contact-form-wrapper {
   border-radius: 5px;
   margin-top: 10px;
   width: 60%;
+  max-width: 300px;
 }
 
 input[type=text], input[type=email], select, textarea {
   width: 100%;
   padding: 10px;
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  border: 1px solid #E3E3E0;
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  border: none !important;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.form-group {
+  margin: 10px 0;
 }
 
 input::placeholder {
@@ -464,7 +481,7 @@ input[type="submit"] {
   background-color: #FF6000;
   border: none;
   border-radius: 2px;
-  padding: 5px 10px;
+  padding: 10px 20px;
   color: #E3E3E0;
   cursor: pointer;
 }
