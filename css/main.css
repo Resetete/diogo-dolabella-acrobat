@@ -436,11 +436,6 @@ p {
   color: #F9F9F6;
 }
 
-
-.test {
-  padding: 50px;
-}
-
 /*---------------------------*/
 /*-------- CONTACT ---------*/
 /*--------------------------*/
@@ -514,6 +509,7 @@ footer p {
   justify-content: space-between;
   flex-flow: row wrap;
   width: 40%;
+  max-width: 300px;
   padding-top: 20px;
 }
 
