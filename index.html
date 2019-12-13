@@ -146,16 +146,21 @@
     <section class="contact-section" id="contact-section">
       <h1> Contact me </h1>
       <div class="contact-form-wrapper">
-          <form action="//formspree.io/rese_m@web.de" method="POST">
-              <input id="name" type="text" name="name" placeholder="your name"> </input>
+          <form name='input' action="http://formspree.io/tmannschatz@gmail.com" method="POST">
+              <meta name="referrer" content="origin">
 
-              <input id="email" type="email" name="_replyto" placeholder="your email" required> </input>
+              <label for="name"> name </label>
+              <input id="name" type="text" name="name" placeholder="Your name"> </input>
+
+              <label for="_replyto"> </label>
+              <input id="email" type="email" name="_replyto" placeholder="Your email" required> </input>
 
               <label for="message"> message </label>
-              <textarea id="message" name="body" placeholder="Your message" style="height:200px"> </textarea>
+              <textarea id="message" name="message" placeholder="Your message" style="height:200px"> </textarea>
 
               <input type="text" name="_gotcha" style="display:none">
-              <input type="hidden" name="_subject" value="Message via http://domain.com">
+              <input type="hidden" name="_subject" value="Message from Diogos Acrobat page">
+              <input type="hidden" name="_next" value="Thanks">
 
               <input type="submit" value="Send">
           </form>
