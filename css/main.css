@@ -390,11 +390,8 @@ p {
   align-items: center;
   justify-content: center;
   flex-flow: column;
-  padding-top: 50px;
-}
-
-.videos {
-  padding: 10px 0 50px 0;
+  padding-bottom: 30px;
+  background-color: #E3E3E0;
 }
 
 .container div {
@@ -409,10 +406,26 @@ p {
   flex-flow: row nowrap;
 }
 
+.next, .prev {
+  background: transparent;
+  border: none;
+}
+
+.next i, .prev i {
+  color: #FF6000;
+  border: none;
+  background-color: transparent;
+}
+
+/*********************************/
+/******** testemonial section ***/
+/********************************/
+
 .testimonial-section {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 30px 0;
 }
 
 .testimonial-wrapper {
@@ -449,7 +462,6 @@ p {
   border: none;
 }
 
-
 /*---------------------------*/
 /*-------- CONTACT ---------*/
 /*--------------------------*/
@@ -459,7 +471,7 @@ p {
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    padding: 100px;
+    padding: 0 100px;
 }
 
 .contact-form-wrapper {
