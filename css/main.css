@@ -276,10 +276,15 @@ header {
   overflow: hidden;
 }
 
+.gallery-column img:hover {
+  position: absolute;
+  left: 25%;
+  width: 60%;
+}
+
 /*------------------------*/
 /*------- about me --------*/
 /*------------------------*/
-
 
 .about-me-section {
   display: flex;
