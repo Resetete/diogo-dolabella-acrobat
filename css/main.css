@@ -259,7 +259,7 @@ header {
     align-items: center; /* desktop: flex-start; */
     justify-content: center;
     flex-flow: column; /* row wrap; */
-    padding-bottom: 30vh;
+    padding-bottom: 40vh;
     height: 100%;
 }
 
@@ -288,6 +288,7 @@ header {
 	margin-right: auto;
 	margin-bottom: 0vh;
 }
+
 .top ul {
 	list-style: none;
 	width: 100%;
@@ -302,8 +303,8 @@ header {
 {
 	position: relative;
 	float: left;
-	width: 33%;
-	height: 33%;
+	width: 50%; /* size of the gallery preview images, desktop: 33%  */
+	height: 30%; /* size of the gallery preview images desktop: 35% */
 	overflow: hidden;
 }
 
@@ -387,6 +388,63 @@ header {
 	-o-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 }
+
+.gallery-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+#img-1 {
+  background-image: url('../img/gallery-img-1.jpg');
+}
+
+#img-2 {
+  background-image: url('../img/gallery-img-2.jpg');
+}
+
+#img-3 {
+  background-image: url('../img/gallery-img-3.jpg');
+}
+
+#img-4 {
+  background-image: url('../img/gallery-img-4.jpg');
+}
+
+#img-5 {
+  background-image: url('../img/gallery-img-5.jpg');
+}
+
+#img-6 {
+  background-image: url('../img/gallery-img-6.jpg');
+}
+
+#img-7 {
+  background-image: url('../img/gallery-img-7.jpg');
+}
+
+#img-8 {
+  background-image: url('../img/gallery-img-8.jpg');
+}
+
+#img-9 {
+  background-image: url('../img/gallery-img-9.jpg');
+}
+
+#img-10 {
+  background-image: url('../img/gallery-img-10.jpg');
+}
+
+#img-11 {
+  background-image: url('../img/gallery-img-11.jpg');
+}
+
+#img-12 {
+  background-image: url('../img/gallery-img-12.jpg');
+}
+
+
 
 /*------------------------*/
 /*------- about me --------*/
@@ -707,6 +765,8 @@ footer p {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+   /******** DESKTOP ***************/
    @media only screen and (min-width: 790px) {
      .fullscreen-bg { /* fullscreen video background styles */
        height: 87vh;
@@ -726,9 +786,11 @@ footer p {
        padding: padding: 10px 20px 10px 50px;
      }
 
-     .gallery-column {
-       flex: 33.3%; /* creates 3 image columns - desktop */
-       max-width: 33.3%;
+     /* gallery images */
+     .top ul li
+     {
+     	width: 33%; /* size of the gallery preview images  */
+     	height: 35%; /* size of the gallery preview images */
      }
 
      .social-media-icon-wrapper {
