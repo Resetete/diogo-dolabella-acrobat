@@ -117,6 +117,7 @@ h2,
 h3 {
   font-family: 'Montserrat Subrayada', sans-serif;
   color: white;
+  padding: 1em 0 1em 0;
 }
 
 p {
@@ -129,9 +130,10 @@ figure {
   margin: 0;
 }
 
-img {
+.logo-letters {
   width: 100%;
 }
+
 /*------------------------*/
 /*------ Header STYLES -----*/
 /*------------------------*/
@@ -257,29 +259,133 @@ header {
     align-items: center; /* desktop: flex-start; */
     justify-content: center;
     flex-flow: column; /* row wrap; */
-    padding-bottom: 30px;
+    padding-bottom: 30vh;
+    height: 100%;
 }
 
 .content-wrapper-gallery h2 { /* photos header */
-  padding: 20px 0px; /* desktop: padding left: 150px*/
   margin: 0;
 }
 
-.gallery-row {
-  display: flex;
-  flex-wrap: wrap;
+.container-gallery {
+	width: 100%;
+	height: 100%;
 }
 
-.gallery-column {
-  flex: 100%; /* creates 2 image columns - mobile */
-  max-width: 100%;
-  overflow: hidden;
+.trans {
+	transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+}
+.top {
+	display: flex !important;
+	width: 80vw;
+	height: 80vh;
+	margin-top: 0vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0vh;
+}
+.top ul {
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.gallery-column img:hover {
-  position: absolute;
-  left: 25%;
-  width: 60%;
+.top ul li
+{
+	position: relative;
+	float: left;
+	width: 33%;
+	height: 33%;
+	overflow: hidden;
+}
+
+.top ul li::before
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	content: '';
+	color: white;
+	opacity: 0.4;
+	text-align: center;
+	box-sizing: border-box;
+	pointer-events: none;
+	transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+}
+.top ul li:hover::before
+{
+	opacity: 0;
+	background-color: rgba(0,0,0,0.90);
+}
+.top ul li img
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.lightbox
+{
+	position: fixed;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.75);
+	z-index: 999;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.lightbox img
+{
+	max-width: 90%;
+	max-height: 80vh;
+	position: relative;
+	top: -100%;
+	/* Transition */
+	transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+}
+.lightbox:target
+{
+	outline: none;
+	top: 0;
+	opacity: 1;
+	pointer-events: auto;
+	transition: all 1.2s ease;
+	-moz-transition: all 1.2s ease;
+	-ms-transition: all 1.2s ease;
+	-o-transition: all 1.2s ease;
+	-webkit-transition: all 1.2s ease;
+}
+.lightbox:target img
+{
+	top: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
 }
 
 /*------------------------*/
@@ -299,8 +405,8 @@ p {
   color: #272725;
 }
 
-.about-me-section h1 {
-  margin: 20px;
+.portrait-figure {
+  width: 100%;
 }
 
 .content-wrapper-about {
@@ -480,6 +586,10 @@ footer {
 footer p {
   color: #7B7B78;
   font-size: 0.6em;
+}
+
+.brand-figure {
+  width: 100%;
 }
 
 .social-media-icon-wrapper {
