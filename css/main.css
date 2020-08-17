@@ -260,7 +260,8 @@ header {
     justify-content: center;
     flex-flow: column; /* row wrap; */
     padding-bottom: 40vh;
-    height: 100%;
+    height: auto;
+    overflow: auto;
 }
 
 .content-wrapper-gallery h2 { /* photos header */
