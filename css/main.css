@@ -178,7 +178,6 @@ header {
   text-align: center;
 }
 
-
 .menu ul li a {
   text-decoration: none;
   text-transform: uppercase;
@@ -237,7 +236,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-flow: row nowrap;
-  padding: 0 50px 10px 20px; /* space to page border on left and right side = 50px */
+  padding: 0 50px 10px 50px; /* space to page border on left and right side = 50px */
 }
 
 .social-media i {
