@@ -253,14 +253,16 @@ header {
 /*------- gallery --------*/
 /*------------------------*/
 
+.gallery-section {
+  overflow: hidden;
+  height: 190vh;
+}
+
 .content-wrapper-gallery {
     display: flex;
     align-items: center; /* desktop: flex-start; */
     justify-content: center;
     flex-flow: column; /* row wrap; */
-    padding-bottom: 40vh;
-    height: auto;
-    overflow: auto;
 }
 
 .content-wrapper-gallery h2 { /* photos header */
@@ -279,10 +281,11 @@ header {
 	-o-transition: all 1s ease;
 	-webkit-transition: all 1s ease;
 }
+
 .top {
 	display: flex !important;
 	width: 80vw;
-	height: 80vh;
+	height: 90vh;
 	margin-top: 0vh;
 	margin-left: auto;
 	margin-right: auto;
@@ -351,6 +354,7 @@ header {
 	z-index: 999;
 	opacity: 0;
 	pointer-events: none;
+
 }
 
 .lightbox img
@@ -366,6 +370,7 @@ header {
 	-o-transition: all 1s ease;
 	-webkit-transition: all 1s ease;
 }
+
 .lightbox:target
 {
 	outline: none;
@@ -378,6 +383,7 @@ header {
 	-o-transition: all 1.2s ease;
 	-webkit-transition: all 1.2s ease;
 }
+
 .lightbox:target img
 {
 	top: 0;
@@ -527,6 +533,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-flow: row nowrap;
+  width: 100%;
 }
 
 .next, .prev {
@@ -772,6 +779,10 @@ footer p {
        height: 87vh;
      }
 
+     .gallery-section {
+         height: 145vh;
+     }
+
      .video-overlay {
        height: 87%; /* needs to be the same as fullscreen-bg height */
      }
@@ -807,9 +818,8 @@ footer p {
 
    @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+    }
 
-
-}
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
