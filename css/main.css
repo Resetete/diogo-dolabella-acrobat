@@ -553,15 +553,10 @@ p {
 
 .container div {
   display: none;
+  margin: 0 10px;
 }
 
-
-
-/* scale the video https://css-tricks.com/fluid-width-video/ */
-
-
-
-
+/* scale videos https://css-tricks.com/fluid-width-video/ */
 
 /*********************************/
 /******** testemonial section ***/
