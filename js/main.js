@@ -18,7 +18,7 @@ $(document).ready(function() {
       currentIndex = 0;
     }
     cycleItems();
-  }, 3000);
+  }, 5000);
 
   $('.next').click(function() {
     clearInterval(autoSlide);
@@ -39,7 +39,42 @@ $(document).ready(function() {
   });
 
 
+  // Find all YouTube videos
+  // Expand that selector for Vimeo and whatever else
+  var $allVideos = $("iframe[src^='https://']"),
 
+  // The element that is fluid width
+  $fluidEl = $("body");
+
+  // Figure out and save aspect ratio for each video
+  $allVideos.each(function() {
+
+    $(this)
+    .data('aspectRatio', this.height / this.width)
+
+    // and remove the hard coded width/height
+    .removeAttr('height')
+    .removeAttr('width');
+
+  });
+
+  // When the window is resized
+  $(window).resize(function() {
+
+    var newWidth = $fluidEl.width();
+
+    // Resize all videos according to their own aspect ratio
+    $allVideos.each(function() {
+
+      var $el = $(this);
+      $el
+      .width(newWidth*0.6)
+      .height(newWidth * $el.data('aspectRatio'));
+
+    });
+
+    // Kick off one resize to fix all videos on page load
+  }).resize();
 
 });
 

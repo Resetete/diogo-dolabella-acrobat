@@ -534,11 +534,6 @@ p {
   color: #222222;
 }
 
-.container div {
-  display: inline-block;
-  display: none;
-}
-
 .video-menu {
   display: flex;
   align-items: center;
@@ -553,6 +548,18 @@ p {
   color: #FF6000;
   border-color: transparent;
 }
+
+.video-container .video-wrapper {
+  display: none;
+}
+
+
+
+/* scale the video https://css-tricks.com/fluid-width-video/ */
+
+
+
+
 
 /*********************************/
 /******** testemonial section ***/
