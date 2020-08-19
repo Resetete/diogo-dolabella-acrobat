@@ -558,6 +558,14 @@ p {
 /******** testemonial section ***/
 /********************************/
 
+.testimonial-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  height: 80vh;
+}
+
 .container-testemonial div {
   display: inline-block;
   display: none;
@@ -576,13 +584,6 @@ p {
   border: none;
   color: #FF6000;
   border-color: transparent;
-}
-
-.testimonial-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 0;
 }
 
 .testimonial-wrapper {
