@@ -217,10 +217,8 @@ header {
   left: 0;
   width: 100%;
   height: 70%; /* needs to be the same as fullscreen-bg height */
-  z-index: 300; /* ensures that overlay is on top of video background and video */ 
+  z-index: 300; /* ensures that overlay is on top of video background and video */
 }
-
-
 
 .content-wrapper-home { # description section with logo
   display: flex;
@@ -265,7 +263,7 @@ header {
 
 .gallery-section {
   overflow: hidden;
-  height: 190vh;
+  height: calc((6.05*(0.35*90vh)));
 }
 
 .content-wrapper-gallery {
@@ -341,17 +339,20 @@ header {
 	-o-transition: all 0.5s ease;
 	-webkit-transition: all 0.5s ease;
 }
+
 .top ul li:hover::before
 {
 	opacity: 0;
 	background-color: rgba(0,0,0,0.90);
 }
+
 .top ul li img
 {
 	width: 100%;
 	height: auto;
 	overflow: hidden;
 }
+
 .lightbox
 {
 	position: fixed;
@@ -557,6 +558,26 @@ p {
 /******** testemonial section ***/
 /********************************/
 
+.container-testemonial div {
+  display: inline-block;
+  display: none;
+}
+
+.testemonial-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  width: 80%; /* width of the testemonial text - DESKTOP 60% */
+}
+
+.next-testemonial, .prev-testemonial {
+  background-color: transparent;
+  border: none;
+  color: #FF6000;
+  border-color: transparent;
+}
+
 .testimonial-section {
   display: flex;
   align-items: center;
@@ -565,12 +586,12 @@ p {
 }
 
 .testimonial-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-  padding: 10px 0;
-  width: 60%;
+  padding: 10vw 3vw; /* space between the arrows to switch between testemonials - DESKTOP: 10vw */
+  text-align: center;
+}
+
+.testemonial-text-alignment {
+  text-align: left;
 }
 
 .highlight-testim, .highlight-news {
@@ -789,10 +810,6 @@ footer p {
        height: 87vh;
      }
 
-     .gallery-section {
-         height: 145vh;
-     }
-
      .video-overlay {
        height: 87%; /* needs to be the same as fullscreen-bg height */
      }
@@ -807,13 +824,27 @@ footer p {
        padding: padding: 10px 20px 10px 50px;
      }
 
-     /* gallery images */
-     .top ul li
+     /* Gallery */
+     .gallery-section {
+       height: calc((5*(0.35*90vh)));
+     }
+
+     .top ul li /* gallery images */
      {
      	width: 33%; /* size of the gallery preview images  */
      	height: 35%; /* size of the gallery preview images */
      }
 
+     /* testemonial section */
+     .testemonial-menu {
+       width: 60%;
+     }
+
+     .testimonial-wrapper {
+       padding: 10vw;
+     }
+
+     /* footer */
      .social-media-icon-wrapper {
        width: 25%;
        padding-bottom: 20px;
