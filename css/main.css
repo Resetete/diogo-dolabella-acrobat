@@ -532,6 +532,8 @@ p {
 
 .video-section h1 {
   color: #222222;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .video-menu {
@@ -549,7 +551,7 @@ p {
   border-color: transparent;
 }
 
-.video-container .video-wrapper {
+.container div {
   display: none;
 }
 
