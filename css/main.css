@@ -722,6 +722,39 @@ footer p {
   padding-left: 2px;
 }
 
+
+/*------------------------*/
+/*------- IMPRESSUM --------*/
+/*------------------------*/
+#imprint-link {
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+}
+
+
+#imprint {
+  height: 85vh;
+}
+
+#imprint p {
+  color: white;
+}
+
+#imprint-content {
+  padding-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+#imprint-address {
+  text-align: left;
+  padding-top: 20px;
+}
+
+
  /* ==========================================================================
    Helper classes
    ========================================================================== */
